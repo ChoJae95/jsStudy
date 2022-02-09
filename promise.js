@@ -19,7 +19,7 @@ const f = () => {
 };
 
 (async () => {
-  console.log('___ start');
+  console.log('___ start2');
 
   try {
     let tmp = await f();
@@ -28,5 +28,5 @@ const f = () => {
     console.log('err', e);
   }
 
-  console.log('___ end');
+  console.log('___ end2');
 })();
