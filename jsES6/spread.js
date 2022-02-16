@@ -13,3 +13,13 @@ console.log(...new Set([1, 2, 3]));  // 결과 : 1 2 3
 // 이터러블이 아닌 일반 객체는 Spread 문법의 대상이 될 수 없다.
 console.log(...{ a: 1, b: 2 });
 // 결과 : TypeError: Found non-callable @@iterator
+
+
+function sum(a,b,c) {
+  console.log(a + b + c)
+}
+
+var array = [10,20,30];
+
+sum.apply(undefined, array);
+sum(...array);
