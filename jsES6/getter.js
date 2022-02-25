@@ -13,3 +13,32 @@ var getter = {
 }
 
 console.log(getter.nextAge); // 결과 : 29
+
+class dog {
+  constructor(Type , Color) {
+    this.type = Type
+    this.color = Color
+  }
+};
+
+
+var dog1 = new dog('똥개', 'black');
+console.log(dog1); // 결과 : { type: '똥개', color: 'black' }
+
+
+class Cat extends dog {
+  constructor(Type, Color, age){
+    super(Type,Color)
+    this.age = age;
+  }
+  get nextAge() {
+    return this.age + 1;
+  }
+}
+
+var cat1 = new Cat('동네고양이','Wite', 2).nextAge;
+console.log(cat1); // 결과 : 3
+
+
+
+
