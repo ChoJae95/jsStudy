@@ -1,4 +1,4 @@
-// ------filter -------//
+// ------await -------//
 // await는 anync 함수 안에서만 동작함
 
 async function f() {
